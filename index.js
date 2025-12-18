@@ -9,7 +9,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || "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";
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY ;
 
 app.post('/api/generate', async (req, res) => {
   const { prompt } = req.body;
